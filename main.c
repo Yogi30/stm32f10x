@@ -139,7 +139,7 @@ void USART1_Configuration(int baudrate){
 	USART_Struc.USART_Parity=USART_Parity_No;
 	USART_Struc.USART_StopBits=USART_StopBits_1;
 	USART_Struc.USART_WordLength=USART_WordLength_8b;
-	
+	USART_Init(USART1,&USART_Struc);
 	USART_Cmd(USART1,ENABLE);
 	USART_HalfDuplexCmd(USART1,ENABLE);
 	
